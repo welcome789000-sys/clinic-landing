@@ -81,3 +81,4 @@ footer{text-align:center;padding:30px 5%;border-top:1px solid var(--line);color:
 .addr-box span{font-weight:600}
 .addr-box em{font-style:normal;font-size:.82rem;color:var(--mute)}
 .btn.wa.off{pointer-events:none;opacity:.5}
+.ba .ph::before{display:none}
