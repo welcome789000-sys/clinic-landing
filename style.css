@@ -21,7 +21,7 @@ h1{font-size:3.2rem;line-height:1.3;font-weight:800;margin-bottom:16px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .hero-art{display:flex;justify-content:center}
 .hero-art svg{transform:rotate(-6deg)}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;padding:30px 5%;border-block:1px solid var(--line);max-width:none}
+.facts-unused{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;padding:30px 5%;border-block:1px solid var(--line);max-width:none}
 .facts strong{display:block;font-size:1.8rem;color:var(--accent)}.facts span{color:var(--mute)}
 .menu{list-style:none}
 .menu li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
@@ -52,3 +52,21 @@ footer{text-align:center;padding:30px 5%;border-top:1px solid var(--line);color:
  .facts strong{font-size:1.3rem}
  section{padding:50px 5%}
 }
+
+/* ---- v2 additions ---- */
+.ph{position:relative;display:flex;align-items:flex-end;justify-content:flex-start;border-radius:12px;border:1px dashed var(--line);min-height:180px;padding:12px;color:var(--mute);font-size:.85rem;overflow:hidden}
+.ph::before{content:"مكان الصورة";position:absolute;top:10px;inset-inline-start:12px;font-size:.75rem;opacity:.7}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.edit-note{color:var(--mute);font-size:.82rem;margin-top:14px}
+.btn.wa.off{opacity:.55;cursor:not-allowed}
+.ba{position:relative;height:320px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.ba-pane{position:absolute;inset:0;border-radius:0;border:0;min-height:0;align-items:center;justify-content:center;font-size:1rem}
+.ba-after{background:linear-gradient(135deg,#d7eef1,#bfe0e5)}
+.ba-before{background:linear-gradient(135deg,#e6dfd2,#d5cab6);clip-path:inset(0 50% 0 0)}
+.ba .tag{position:absolute;top:12px;right:12px;background:var(--accent);color:#fff;padding:2px 12px;border-radius:6px;font-weight:800;z-index:2}
+.ba-before .tag{right:auto;left:12px;background:#6b5d45}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:3}
+.ba::after{content:"";position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.15);z-index:2;pointer-events:none}
+.price-table{max-width:560px;width:100%}.price-table td:last-child{text-align:left}
+.hrs{margin:26px auto 0}
+.ba-before::before{inset-inline-start:auto;left:12px;top:44px}
